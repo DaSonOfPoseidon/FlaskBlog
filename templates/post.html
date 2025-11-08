@@ -5,5 +5,7 @@
     <div class='post'>
         <p>{{ post['created'] }}</p>
         <p>{{ post['content'] }}</p>
+        <hr>
+        <a href="{{ url_for('edit', id=post['id']) }}">Edit</a>
     </div>
 {% endblock %}

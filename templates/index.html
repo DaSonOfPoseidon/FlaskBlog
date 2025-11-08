@@ -7,6 +7,8 @@
             <p>{{ post['created'] }}</p>
             <h2><a href="{{ url_for('post', id=post['id']) }}">{{ post['title'] }}</a></h2>
             <p>{{ post['content'] }}</p>
+            <hr>
+            <a href="{{ url_for('edit', id=post['id']) }}">Edit</a>
         </div>
     {% endfor %}
 {% endblock %}
